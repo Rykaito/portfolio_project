@@ -129,8 +129,7 @@ button {
     }
 
     .about-img {
-        border-radius: 25%;
-        max-height: 200px;
+        display: none;
     }
 
     .about-text {
