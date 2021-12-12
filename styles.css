@@ -1,0 +1,98 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(61, 58, 58);
+}
+
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    margin: auto 10%;
+    font-size: 1.25rem;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-img {
+    max-width: 25%;
+    height: 300px;
+    min-width: fit-content;
+    border-radius: 50%;
+    margin: 5% 5% 0 0;
+}
+
+.about-text {
+    max-width: 60%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.projects-list {
+    list-style-type: none;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    column-gap: 20px;
+}
+
+.contact-container a {
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkedin {
+    background-color: #0072b1;
+}
+
+.email {
+    background-color: #de5246;
+}
+
+.github {
+    background-color: #171515;
+}
+
+a.linkedin:hover, a.email:hover, a.github:hover {
+    background-color: rgb(61, 58, 58);
+}
+
+.label {
+    margin-top: 60px;
+    color: white;
+}
