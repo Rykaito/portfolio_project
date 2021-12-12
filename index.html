@@ -9,6 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Ryan Torchia Portfolio</title>
+    <script>
+        function colorToggle() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -66,6 +72,9 @@
                 <a class='github' href="https://github.com/Rykaito" target='_blank'><p class="label">GitHub</p></a>
             </div>
         </section>
+        <div class='toggle'>
+            <button onclick="colorToggle()">Night Mode</button>
+        </div>
         <footer>
             <p>Thanks for checking out my site! Come back soon!</p>
         </footer>

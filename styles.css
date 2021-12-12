@@ -8,6 +8,11 @@ body {
     padding: 0 16px;
 }
 
+.dark-mode {
+    background-color: #292929;
+    color: #c4c4c4;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -23,13 +28,14 @@ nav {
 }
 
 .nav-item {
-    margin: auto 10%;
-    font-size: 1.25rem;
+    margin: auto 8%;
+    font-size: 1.15rem;
 }
 
 .nav-item a {
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .about-img {
@@ -37,7 +43,7 @@ nav {
     height: 300px;
     min-width: fit-content;
     border-radius: 50%;
-    margin: 5% 5% 0 0;
+    margin: 5% 5%;
 }
 
 .about-text {
@@ -58,7 +64,7 @@ nav {
 footer {
     bottom: 0;
     left: 0;
-    position: fixed;
+    position: relative;
     text-align: center;
     width: 100%;
 }
@@ -95,4 +101,55 @@ a.linkedin:hover, a.email:hover, a.github:hover {
 .label {
     margin-top: 60px;
     color: white;
+}
+
+.toggle {
+    display: flex;
+}
+
+button {
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(61, 58, 58);
+    margin-top: 2rem;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+@media only screen and (max-width:600px) {
+    .nav-items {
+        flex-direction: column;
+        list-style-type: disclosure-closed;
+        width:auto
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+
+    .about-img {
+        border-radius: 25%;
+        max-height: 200px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        grid-template-rows: 50px;
+    }
+
+    .label {
+        margin-top: 12px;
+    }
+
+    footer {
+        font-size: x-small;
+    }
+
+    .toggle {
+        justify-content: center;
+    }
 }
